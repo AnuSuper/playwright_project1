@@ -1,0 +1,26 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test WebAPIPart1.spec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.10.1"
+  },
+  "dependencies": {
+    "allure-playwright": "^3.7.1"
+  },
+  "scripts":{
+    "regression": "npx playwright test",
+    "webTest"    :"npx playwright test --grep @Web",
+    "Safari"     :"npx playwright test --config playwright.config1.js"
+  }
+ 
+}
