@@ -4,23 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test WebAPIPart1.spec.js"
+    "regression": "npx playwright test",
+    "webTest": "npx playwright test --grep @Web",
+    "Safari": "npx playwright test --config playwright.config1.js",
+    "CucumberRegression": "npx cucumber-js --tags '@Regression' --retry 1 --exit --format html:cucumber-report.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "@playwright/test": "^1.56.1",
-    "@types/node": "^24.10.1"
+    "@azure/identity": "^4.13.2",
+    "@azure/playwright": "^1.1.6",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^24.10.1",
+    "typecript": "^0.0.1-security",
+    "typescript": "^6.0.3"
   },
   "dependencies": {
+    "@cucumber/cucumber": "^13.2.0",
     "allure-playwright": "^3.7.1"
-  },
-  "scripts":{
-    "regression": "npx playwright test",
-    "webTest"    :"npx playwright test --grep @Web",
-    "Safari"     :"npx playwright test --config playwright.config1.js"
   }
- 
 }
